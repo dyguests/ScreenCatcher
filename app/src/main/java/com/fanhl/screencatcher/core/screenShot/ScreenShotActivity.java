@@ -1,4 +1,4 @@
-package com.fanhl.screencatcher.core.screenShot;
+package com.fanhl.screencatcher.core.screenshot;
 
 import android.content.ContentResolver;
 import android.content.Context;

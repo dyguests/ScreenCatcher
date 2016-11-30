@@ -17,4 +17,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="监听截屏获取图像"/>
+    <Button
+        android:id="@+id/screenshot_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ScreenshotContent"/>
 </LinearLayout>

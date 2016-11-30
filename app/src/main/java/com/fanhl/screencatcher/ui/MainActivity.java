@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.fanhl.screencatcher.R;
+import com.fanhl.screencatcher.core.contentObserver.ScreenshotContentActivity;
 import com.fanhl.screencatcher.core.screenshot.ScreenShotActivity;
 
 import butterknife.ButterKnife;
@@ -20,5 +21,9 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.listen_capture) void listen_capture() {
         ScreenShotActivity.launch(this);
+    }
+
+    @OnClick(R.id.screenshot_content) public void screenshot_content() {
+        ScreenshotContentActivity.launch(this);
     }
 }
