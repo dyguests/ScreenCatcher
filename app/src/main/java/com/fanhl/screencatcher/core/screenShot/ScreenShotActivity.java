@@ -24,7 +24,7 @@ import butterknife.ButterKnife;
  * Android 监听截屏获取图像
  * See {http://blog.csdn.net/liuhanhan512/article/details/36665915}
  */
-public class ScreenShotActivity extends AppCompatActivity {
+public class ScreenshotActivity extends AppCompatActivity {
     private static final int DEFAULT_WIDTH = 512;
     private static final int DEFAULT_HEIGHT = 384;
 
@@ -41,13 +41,13 @@ public class ScreenShotActivity extends AppCompatActivity {
     private Handler hanlder = new Handler();
 
     public static void launch(Context context) {
-        context.startActivity(new Intent(context, ScreenShotActivity.class));
+        context.startActivity(new Intent(context, ScreenshotActivity.class));
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen_shot);
+        setContentView(R.layout.activity_screenshot);
         ButterKnife.bind(this);
 
         contentResolver = getContentResolver();
