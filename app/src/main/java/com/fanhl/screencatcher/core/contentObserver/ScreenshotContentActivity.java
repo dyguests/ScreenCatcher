@@ -16,11 +16,19 @@ public class ScreenshotContentActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screenshot_content);
+    }
+
+    @Override protected void onResume() {
+        super.onResume();
         ScreenshotContentObserver.startObserve(this);
     }
 
-    @Override protected void onDestroy() {
+    @Override protected void onPause() {
         ScreenshotContentObserver.stopObserve();
+        super.onPause();
+    }
+
+    @Override protected void onDestroy() {
         super.onDestroy();
     }
 }
