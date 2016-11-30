@@ -57,10 +57,8 @@ public class ScreenShotActivity extends AppCompatActivity {
                 final Bitmap bitmap = getBitmap(uri);
                 if (bitmap != null) {
                     hanlder.post(new Runnable() {
-
                         @Override
                         public void run() {
-                            // TODO Auto-generated method stub
                             image.setImageBitmap(bitmap);
                         }
 

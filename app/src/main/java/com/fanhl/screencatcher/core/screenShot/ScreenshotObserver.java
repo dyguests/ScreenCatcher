@@ -12,7 +12,8 @@ import java.io.File;
  */
 public class ScreenshotObserver extends FileObserver {
     private static final String TAG = "ScreenshotObserver";
-    private static final String PATH = Environment.getExternalStorageDirectory().toString() + "/Pictures/Screenshots/";
+    //    private static final String PATH = Environment.getExternalStorageDirectory().toString() + "/Pictures/Screenshots/";
+    private static final String PATH = Environment.getExternalStorageDirectory().toString() + "/DCIM/Screenshots/";
 
     private OnScreenshotTakenListener listener;
     private String lastTakenPath;
