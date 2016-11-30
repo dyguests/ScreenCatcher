@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">截屏捕捉器</string>
+    <string name="screen_catcher">截屏捕获器</string>
 </resources>
